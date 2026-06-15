@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>RANKED DU SPORT</title>
+  <link rel="stylesheet" href="../ui_design/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>RANKED DU SPORT</h1>
+
+  <form id="rankForm">
+    <h2>Utilisateur</h2>
+
+    <label>Nom</label>
+    <input type="text" id="username" required>
+
+    <h2>Force</h2>
+
+    <label>Pompes max</label>
+    <input type="number" id="pushups" min="0">
+
+    <label>Abdos max</label>
+    <input type="number" id="abs" min="0">
+
+    <label>Tractions max</label>
+    <input type="number" id="pullups" min="0">
+
+    <label>Squats max</label>
+    <input type="number" id="squats" min="0">
+
+    <div class="optional">
+      <label>
+        <input type="checkbox" id="skipBench">
+        Je ne veux pas renseigner le développé couché
+      </label>
+    </div>
+
+    <label>Ton poids corporel en kg</label>
+    <input type="number" id="bodyWeight" min="0">
+
+    <label>Poids soulevé au développé couché en kg</label>
+    <input type="number" id="benchWeight" min="0">
+
+    <h2>Cardio</h2>
+
+    <label>Temps 400m</label>
+    <input type="text" id="time400" placeholder="ex: 01:30">
+
+    <label>Temps 1km</label>
+    <input type="text" id="time1k" placeholder="ex: 04:30">
+
+
+    <button type="submit">Calculer mon rank</button>
+  </form>
+
+  <div id="results"></div>
+</div>
+
+<script src="../data_script/script.js"></script>
+</body>
+</html>
