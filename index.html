@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Classement - RANKED DU SPORT</title>
+  <title>Classement - SPORTSMATE</title>
   <link rel="stylesheet" href="ressources/ui_design/style.css">
 </head>
 <body>
@@ -13,8 +13,28 @@
     <a href="ressources/apps/rank.html">Calculer un rank</a>
   </nav>
 
+<label for="sortMode">Mode de classement</label>
+<select id="sortMode">
+  <option value="globalScore" selected>Global</option>
+  <option value="cardioScore">Cardio</option>
+  <option value="forceScore">Force</option>
+  
+</select>
   <div id="leaderboard"></div>
 </div>
+
+
+
+
+
+<details class="rank-doc">
+  <summary>Voir la liste des ranks</summary>
+  <div id="rankDocumentation"></div>
+</details>
+
+
+
+
 
 <script src="ressources/data_script/script.js"></script>
 <script src="ressources/data_script/users.js"></script>
