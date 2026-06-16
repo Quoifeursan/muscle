@@ -24,15 +24,16 @@ const ranks = [
   { score: 1200, name: "Bronze 3" },
   { score: 1100, name: "Bronze 2" },
   { score: 1000, name: "Bronze 1" },
-  { score: 900, name: "competitor 3" },
-  { score: 800, name: "competitor 2" },
-  { score: 700, name: "competitor 1" },
-  { score: 600, name: "contender 3" },
-  { score: 500, name: "contender 2" },
-  { score: 400, name: "contender 1" },
-  { score: 300, name: "prospect 3" },
-  { score: 200, name: "prospect 2" },
-  { score: 100, name: "prospect 1" }
+  { score: 900, name: "Competitor 3" },
+  { score: 800, name: "Competitor 2" },
+  { score: 700, name: "Competitor 1" },
+  { score: 600, name: "Contender 3" },
+  { score: 500, name: "Contender 2" },
+  { score: 400, name: "Contender 1" },
+  { score: 300, name: "Prospect 3" },
+  { score: 200, name: "Prospect 2" },
+  { score: 100, name: "Prospect 1" },
+  { score: 0, name: "Unranked" }
 ];
 
 const tables = {
