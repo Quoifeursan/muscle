@@ -1,0 +1,4 @@
+1.1 - 16/06/26 - 16:04
+Rajout d'un bouton retour au menu dans la page rank
+Liste des rank affichés sur la page principale
+trier les uttilisateur par dicipline
