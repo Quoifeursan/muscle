@@ -4,4 +4,5 @@ const users = [
   { username: "Tom", globalScore: 0, forceScore: 0, cardioScore: 0 },
   { username: "Adrien", globalScore: 0, forceScore: 0, cardioScore: 0 },
   { username: "Simon", globalScore: 0, forceScore: 0, cardioScore: 0 },
+  { username: "William", globalScore: 1113, forceScore: 475, cardioScore: 1750 },
 ];

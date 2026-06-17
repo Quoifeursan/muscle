@@ -298,7 +298,7 @@ const globalScore = average([
     </div>
 
     <button type="button" id="downloadRankFile">
-      Télécharger le fichier .tju
+      Télécharger le fichier (à envoyer a Arthur pour l'upload)
     </button>
   `;
 
