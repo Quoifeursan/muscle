@@ -28,6 +28,8 @@ body::before {
   pointer-events: none;
 }
 
+
+
 .container {
   width: min(95%, 650px);
   margin: 30px auto;
