@@ -1,5 +1,5 @@
 const users = [
-  { username: "Arthur", globalScore: 625, forceScore: 450, cardioScore: 800 },
+{ username: "Arthur", globalScore: 1100, forceScore: 450, cardioScore: 1750 },
   { username: "Tom", globalScore: 213, forceScore: 425, cardioScore: 0 },
   { username: "Morgan", globalScore: 725, forceScore: 700, cardioScore: 750 },
   { username: "Adrien", globalScore: 0, forceScore: 0, cardioScore: 0 },
