@@ -39,7 +39,13 @@ history: [
 
 
 
-  { username: "Simon", globalScore: 0, forceScore: 0, cardioScore: 0 },
+{ username: "Simon", globalScore: 250, forceScore: 500, cardioScore: 0,
+
+history: [
+
+  {"date":"23/06/2026","pushups":34,"abs":29,"pullups":7,"squats":56,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"","time1k":"","forceScore":500,"cardioScore":0,"globalScore":250},
+
+] },
 
 
 
