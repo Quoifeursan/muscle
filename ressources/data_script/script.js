@@ -77,15 +77,15 @@ const tables = {
     [22, 400], [18, 300], [14, 200], [10, 100]
   ],
 
-  squats: [
-    [401, 3400], [389, 3300], [377, 3200], [365, 3100], [353, 3000],
-    [341, 2900], [329, 2800], [317, 2700], [305, 2600], [293, 2500],
-    [281, 2400], [269, 2300], [257, 2200], [245, 2100], [233, 2000],
-    [221, 1900], [209, 1800], [197, 1700], [185, 1600], [173, 1500],
-    [161, 1400], [149, 1300], [137, 1200], [125, 1100], [113, 1000],
-    [101, 900], [89, 800], [77, 700], [65, 600], [53, 500],
-    [41, 400], [29, 300], [17, 200], [5, 100]
-  ],
+squats: [
+  [809, 3400], [785, 3300], [761, 3200], [737, 3100], [713, 3000],
+  [689, 2900], [665, 2800], [641, 2700], [617, 2600], [593, 2500],
+  [569, 2400], [545, 2300], [521, 2200], [497, 2100], [473, 2000],
+  [449, 1900], [425, 1800], [401, 1700], [377, 1600], [353, 1500],
+  [329, 1400], [305, 1300], [281, 1200], [257, 1100], [233, 1000],
+  [209, 900], [185, 800], [161, 700], [137, 600], [113, 500],
+  [89, 400], [65, 300], [41, 200], [17, 100]
+],
 
   run400: [
     [43, 3400], [45, 3300], [47, 3200], [49, 3100], [51, 3000],
@@ -187,20 +187,31 @@ function rankHTML(title, score, global = false) {
   `;
 }
 
-function downloadUserFile(username, globalScore, forceScore, cardioScore) {
+function downloadUserFile(username, globalScore, forceScore, cardioScore, session) {
   const safeUsername = username
     .trim()
     .replaceAll(" ", "_")
     .replace(/[^a-zA-Z0-9_-]/g, "");
 
-  const line = `{ username: "${username}", globalScore: ${globalScore}, forceScore: ${forceScore}, cardioScore: ${cardioScore} },`;
+  const dateParts = session.date.split("/");
+  const day = dateParts[0];
+  const month = dateParts[1];
+
+  const line =
+`{ username: "${username}", globalScore: ${globalScore}, forceScore: ${forceScore}, cardioScore: ${cardioScore},
+
+history: [
+
+  ${JSON.stringify(session)},
+
+] },`;
 
   const blob = new Blob([line], { type: "text/plain" });
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
   a.href = url;
-  a.download = `${safeUsername || "user"}.tju`;
+  a.download = `${safeUsername || "user"}_${day}_${month}.tju`;
 
   document.body.appendChild(a);
   a.click();
@@ -272,7 +283,43 @@ const globalScore = average([
   cardioScore
 ]);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+const session = {
+  date: new Date().toLocaleDateString("fr-FR"),
+  pushups: pushups,
+  abs: abs,
+  pullups: pullups,
+  squats: squats,
+  bodyWeight: skipBench ? null : bodyWeight,
+  benchWeight: skipBench ? null : benchWeight,
+  benchPercent: skipBench ? null : Math.round((benchWeight / bodyWeight) * 100),
+  time400: document.getElementById("time400").value,
+  time1k: document.getElementById("time1k").value,
+  forceScore: forceScore,
+  cardioScore: cardioScore,
+  globalScore: globalScore
+};
   let html = `<div class="result-card">`;
+
+
+
+
+
+
+
+
 
   if (globalScore !== null) {
     html += `
@@ -308,11 +355,12 @@ const globalScore = average([
 
   document.getElementById("downloadRankFile").addEventListener("click", function() {
     downloadUserFile(
-      username,
-      globalScore,
-      forceScore,
-      cardioScore,
-    );
+  username,
+  globalScore,
+  forceScore,
+  cardioScore,
+  session
+);
   });
 });
 
