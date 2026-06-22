@@ -32,7 +32,7 @@ history: [
 
 history: [
 
-  {"date":"22/06/2026","pushups":10,"abs":0,"pullups":0,"squats":225,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"10:00","time1k":"10:00","forceScore":600,"cardioScore":0,"globalScore":300},
+  {"date":"22/06/2026","pushups":10,"abs":0,"pullups":0,"squats":225,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"-","time1k":"-","forceScore":600,"cardioScore":0,"globalScore":300},
 
 ] },
 
