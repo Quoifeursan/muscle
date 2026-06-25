@@ -1,6 +1,10 @@
 const users = [
-{ username: "Arthur", globalScore: 1363, forceScore: 775, cardioScore: 1950,
-    history: [
+{ username: "Arthur", globalScore: 1425, forceScore: 900, cardioScore: 1950,
+
+history: [
+
+         {"date":"25/06/2026","pushups":41,"abs":101,"pullups":3,"squats":150,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"1:15","time1k":"3:34","forceScore":900,"cardioScore":1950,"globalScore":1425},
+
         {"date":"22/06/2026","pushups":40,"abs":76,"pullups":3,"squats":150,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"1:15","time1k":"3:34","forceScore":775,"cardioScore":1950,"globalScore":1363},
         {"date":"20/06/2026","pushups":21,"abs":26,"pullups":3,"squats":54,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"1:15","time1k":"3:58","forceScore":375,"cardioScore":1750,"globalScore":1100},
         {"date":"16/06/2026","pushups":21,"abs":26,"pullups":3,"squats":54,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"1:34","time1k":"4:51","forceScore":375,"cardioScore":800,"globalScore":588},
