@@ -43,10 +43,11 @@ history: [
 
 
 
-{ username: "Simon", globalScore: 250, forceScore: 500, cardioScore: 0,
+{ username: "Simon", globalScore: 913, forceScore: 775, cardioScore: 1050,
 
 history: [
 
+  {"date":"27/06/2026","pushups":41,"abs":74,"pullups":10,"squats":60,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"01:24","time1k":"04:56","forceScore":775,"cardioScore":1050,"globalScore":913},
   {"date":"23/06/2026","pushups":34,"abs":29,"pullups":7,"squats":56,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"","time1k":"","forceScore":500,"cardioScore":0,"globalScore":250},
 
 ] },
