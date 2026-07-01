@@ -1,7 +1,9 @@
 const users = [
-{ username: "Arthur", globalScore: 1425, forceScore: 900, cardioScore: 1950,
+{ username: "Arthur", globalScore: 1713, forceScore: 1375, cardioScore: 2050,
 
 history: [
+
+  {"date":"30/06/2026","pushups":41,"abs":101,"pullups":3,"squats":611,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"1:14","time1k":"3:25","forceScore":1375,"cardioScore":2050,"globalScore":1713},
 
          {"date":"25/06/2026","pushups":41,"abs":101,"pullups":3,"squats":150,"bodyWeight":null,"benchWeight":null,"benchPercent":null,"time400":"1:15","time1k":"3:34","forceScore":900,"cardioScore":1950,"globalScore":1425},
 
